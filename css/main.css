@@ -42,7 +42,6 @@ body .grid {
 header .top-header {
   color: black;
   background-color: #42aa2a;
-  grid-area: theader;
   padding: 10px 20%;
   font-size: 1.6rem;
 }
@@ -355,11 +354,16 @@ header .main-header ul li a {
 }
 
 /*-------TESTIMONIALS SECTION---------*/
+#paragraph {
+  font-size: 1.6rem;
+  padding: 0 10px 5px;
+  text-align: center;
+}
+
 .grid .body .main-body .testimonials {
   padding: 20px 20% 80px 20%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(100px auto);
   grid-template-areas:
     'topTest topTest'
     'test1 test2'
@@ -388,7 +392,7 @@ header .main-header ul li a {
   grid-area: ttest2;
   text-align: center;
   align-self: center;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 700;
 }
 
@@ -400,8 +404,8 @@ header .main-header ul li a {
 .grid .body .main-body .testimonials #bodyTest {
   grid-area: bodyTest;
   display: grid;
+  column-gap: 10px;
   grid-template-columns: repeat(1fr);
-  grid-auto-rows: minmax(100px auto);
   grid-template-areas: 'test1 test2';
 }
 
@@ -409,10 +413,8 @@ header .main-header ul li a {
   grid-area: test1;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-auto-rows: repeat(4 1fr);
+  padding: 40px 10px 10px;
   background-color: #606266;
-  padding: 40px 0;
-  margin: 0 5px;
   grid-template-areas:
     'first first'
     'tPerson1 pFirst';
@@ -432,8 +434,7 @@ header .main-header ul li a {
 
 .grid .body .main-body .testimonials .test1 #tPerson1 {
   align-self: center;
-  padding: 0 10px;
-  max-width: 200px;
+  max-width: 100%;
   height: 200px;
   grid-area: tPerson1;
 }
@@ -446,10 +447,8 @@ header .main-header ul li a {
   grid-area: test2;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-auto-rows: repeat(4 1fr);
+  padding: 40px 10px 10px;
   background-color: #606266;
-  margin: 0 5px;
-  padding: 40px 0;
   grid-template-areas:
     'first first'
     'tPerson2 pSecond';
@@ -467,12 +466,10 @@ header .main-header ul li a {
 }
 
 .grid .body .main-body .testimonials .test2 #tPerson2 {
-  padding: 0 10px;
-  align-self: center;
-  max-width: 200px;
-  max-height: 200px;
+  width: 100%;
+  height: 200px;
+  align-self: flex-end;
   grid-area: tPerson2;
-  margin-top: -50px;
 }
 
 .grid .body .main-body .testimonials .test1 #tPerson2 .pSecond {
