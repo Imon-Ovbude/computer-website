@@ -513,6 +513,14 @@ header .main-header ul li a {
   font-size: 20px;
 }
 
+.grid footer .statement p {
+  margin-bottom: 5px;
+}
+
+.grid footer .statement button {
+  font-size: 1.6rem;
+}
+
 .grid footer .request {
   padding: 20px;
   grid-area: request;
