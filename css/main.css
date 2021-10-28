@@ -541,17 +541,28 @@ header .main-header ul li a {
 
 /*------MEDIA QUERY MAX-WIDTH 1130PX-------*/
 @media (max-width: 1130px) {
+  /* HEADER SECTION */
   header .main-header {
     display: grid;
   }
 
   header .main-header p {
     align-self: center;
+    font-size: 4rem;
   }
 
   header .main-header ul {
     display: grid;
     text-align: center;
+  }
+
+  header .main-header ul li a {
+    font-size: 2.5rem;
+  }
+
+  /* SERVICES SECTION */
+  .services p {
+    font-size: 1.6rem;
   }
 }
 
