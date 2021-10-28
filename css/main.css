@@ -566,6 +566,11 @@ header .main-header ul li a {
     line-height: 2.5;
     margin-top: 20px;
   }
+
+  /* NUMBERS SECTION */
+  .numbers span {
+    font-size: 3.5rem;
+  }
 }
 
 /*------MEDIA QUERY MAX-WIDTH 975PX-------*/
