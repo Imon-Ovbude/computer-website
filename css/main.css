@@ -561,8 +561,10 @@ header .main-header ul li a {
   }
 
   /* SERVICES SECTION */
-  .services p {
+  .services .services-cube div .line {
     font-size: 1.6rem;
+    line-height: 2.5;
+    margin-top: 20px;
   }
 }
 
